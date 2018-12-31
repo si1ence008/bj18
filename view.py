@@ -1,6 +1,10 @@
 from django.http import HttpResponse
+from django.shortcuts import redirect,render
 
 
-def test(request):
+def index(request):
     return HttpResponse('ok')
 
+
+def login(request):
+    return redirect('/login')
